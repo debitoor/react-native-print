@@ -135,14 +135,6 @@ RCT_EXPORT_METHOD(selectPrinter:(RCTPromiseResolveBlock)resolve
 
 #pragma mark - UIPrintInteractionControllerDelegate
 
--(UIViewController*)printInteractionControllerParentViewController:(UIPrintInteractionController*)printInteractionController  {
-    UIViewController *result = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-    while (result.presentedViewController) {
-        result = result.presentedViewController;
-    }
-    return result;
-}
-
 -(void)printInteractionControllerWillDismissPrinterOptions:(UIPrintInteractionController*)printInteractionController {}
 
 -(void)printInteractionControllerDidDismissPrinterOptions:(UIPrintInteractionController*)printInteractionController {}
