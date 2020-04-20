@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
   s.source       = { :git => "https://github.com/debitoor/react-native-print" }
-  s.source_files  = "RNPrint/ios/RNPrint/*.{h,m}"
+  s.source_files  = "ios/RNPrint/*.{h,m}"
 
   s.dependency 'React'
 end
